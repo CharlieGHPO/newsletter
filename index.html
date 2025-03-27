@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Cooking & Dating Newsletter</title>
+<link rel="icon" type="image/png" sizes="32x32" href="favicon-32x32.png">
+<link rel="icon" type="image/x-icon" href="favicon.ico">
+<link href="https://fonts.googleapis.com/css2?family=Lato:wght@400;700&display=swap" rel="stylesheet">
+<style>
+:root{--bg:#f1e9da;--primary:#e63946;--text:#1d3557;--card-bg:#fff;--radius:8px;--shadow:0 4px 12px rgba(0,0,0,.1);}
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'Lato',sans-serif;background:var(--bg);color:var(--text);}
+header{background:var(--primary);padding:2rem;text-align:center;}
+header h1{color:#fff;font-size:2.75rem;}
+main{max-width:600px;margin:2rem auto;padding:0 1rem;display:grid;gap:2rem;}
+.section{background:var(--card-bg);border-radius:var(--radius);box-shadow:var(--shadow);overflow:hidden;}
+.section img{width:100%;display:block;}
+.content{padding:2.5rem;}
+.content h2{color:var(--primary);font-size:1.8rem;margin-bottom:.5rem;}
+.content p, .content ul, .content ol{margin-bottom:1rem;}
+.btn{display:inline-block;padding:.75rem 1.5rem;background:var(--primary);color:#fff;border-radius:var(--radius);text-decoration:none;font-weight:700;margin-top:2rem;transition:transform .3s;animation:pulse 3s infinite;}
+.btn:hover{transform:scale(1.05);animation:none;}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(230,57,70,.5);}50%{box-shadow:0 0 0 15px rgba(230,57,70,0);}}
+.carousel{position:relative;border-radius:var(--radius);overflow:hidden;}
+.slides{display:flex;transition:transform .5s ease;}
+.slide{flex:0 0 100%;}
+.nav-btn{position:absolute;top:50%;transform:translateY(-50%);background:rgba(0,0,0,.3);color:#fff;border:none;font-size:1.5rem;padding:.5rem;cursor:pointer;border-radius:50%;}
+.prev{left:10px;} .next{right:10px;}
+footer{text-align:center;font-size:.85rem;padding:1rem;}
+footer a{color:var(--primary);text-decoration:none;margin:0 .5rem;}
+@media(max-width:480px){header h1{font-size:2rem;} .content h2{font-size:1.5rem;}}
+</style>
+</head>
+<body>
+
+<header><h1>Cooking & Dating</h1></header>
+
+<main>
+
+  <!-- INTRODUCTION -->
+  <section class="section">
+    <div class="content">
+      <h2>Bienvenue dans votre newsletter Cooking & Dating</h2>
+      <p>Chaque mois, recevez recettes exclusives, conseils de séduction culinaire et inspirations pour transformer vos dîners en moments inoubliables.</p>
+    </div>
+  </section>
+
+  <!-- RECETTE DU MOIS -->
+  <article class="section">
+    <img src="images/lasagnes-vegetariennes.webp" alt="Plat de lasagnes végétariennes gratinées avec sauce tomate et fromage fondu, sur une table en bois">
+    <div class="content">
+      <h2>Recette du mois — Lasagnes végétariennes</h2>
+      <ul>
+        <li>8 feuilles de lasagne</li><li>300 g d’épinards</li><li>250 g ricotta</li>
+        <li>200 g mozzarella</li><li>500 ml sauce tomate</li><li>1 oignon, 2 gousses d’ail</li>
+      </ul>
+      <ol>
+        <li>Préchauffer four à 180°C.</li>
+        <li>Cuire épinards+ail+oignon jusqu’à évaporation.</li>
+        <li>Mélanger épinards+ricotta, assaisonner.</li>
+        <li>Monter lasagnes en couches.</li>
+        <li>Cuire 35 min, reposer 5 min.</li>
+      </ol>
+      <a href="#" class="btn">Voir la recette complète</a>
+    </div>
+  </article>
+
+  <!-- INSPIRATION CUISINE -->
+  <article class="section">
+    <img src="images/salade-pois-chiches.webp" alt="Bol de salade composée de pois chiches, carottes, persil et citron, posé sur une table en bois">
+    <div class="content">
+      <h2>Inspiration Cuisine</h2>
+      <p>Salade tiède quinoa & pois chiches grillés — repas rapide, nutritif et plein de saveurs.</p>
+      <a href="#" class="btn">Découvrir la recette</a>
+    </div>
+  </article>
+
+  <!-- TENDANCE DU MOIS -->
+  <article class="section">
+    <img src="images/bocal-piments-marines.webp" alt="Bocal en verre rempli de piments rouges marinés, posé à côté d'une cuillère sur une table en bois">
+    <div class="content">
+      <h2>Tendance du mois — Chili Crisp</h2>
+      <p>Le condiment incontournable pour ajouter du piquant et du croquant à tous vos plats.</p>
+      <a href="#" class="btn">Essayez-le</a>
+    </div>
+  </article>
+
+  <!-- ASTUCE DE CHEF -->
+  <article class="section">
+    <img src="images/portrait-cheffe-cuisine.webp" alt="Jeune femme en tenue de cheffe cuisinière souriant devant le plan de travail de sa cuisine">
+    <div class="content">
+      <h2>Astuce de Chef</h2>
+      <p>Pensez vos recettes comme des formules : base + saveur + texture = succès assuré.</p>
+      <a href="#" class="btn">En savoir plus</a>
+    </div>
+  </article>
+
+  <!-- CONSEILS EN SÉDUCTION -->
+  <article class="section">
+    <img src="images/createur-contenu-seduction.webp" alt="Femme souriante parlant devant une caméra avec anneau lumineux dans un décor intérieur chaleureux">
+    <div class="content">
+      <h2>Conseils en séduction</h2>
+      <ul>
+        <li>Créez une ambiance intime avec lumière tamisée.</li>
+        <li>Optez pour une playlist douce en fond.</li>
+        <li>Partagez la préparation du repas ensemble.</li>
+        <li>Posez des questions ouvertes pour stimuler la conversation.</li>
+        <li>Ajoutez une pincée de piment pour éveiller les sens.</li>
+      </ul>
+      <a href="#" class="btn">Voir tous les conseils</a>
+    </div>
+  </article>
+
+  <!-- SONDAGE -->
+  <article class="section">
+    <div class="content">
+      <h2>Sondage : Quelle astuce séduction préférez-vous ?</h2>
+      <form id="pollForm">
+        <label><input type="radio" name="seduce" value="Ambiance tamisée"> Ambiance tamisée</label><br>
+        <label><input type="radio" name="seduce" value="Musique douce"> Musique douce</label><br>
+        <label><input type="radio" name="seduce" value="Plat épicé"> Plat épicé</label><br>
+        <label><input type="radio" name="seduce" value="Conversation sincère"> Conversation sincère</label><br>
+        <button type="submit" class="btn">Voter</button>
+      </form>
+      <div id="pollResult" style="display:none;"></div>
+    </div>
+  </article>
+
+</main>
+<footer>&copy; 2025 Cooking & Dating | <a href="#">Se désabonner</a></footer>
+
+<script>
+const poll={Ambiance tamisée:0,Musique douce:0,Plat épicé:0,Conversation sincère:0};
+document.getElementById('pollForm').onsubmit=e=>{
+  e.preventDefault();
+  const choice=document.querySelector('input[name="seduce"]:checked');
+  if(!choice){alert('Sélectionnez une option');return;}
+  poll[choice.value]++;
+  document.getElementById('pollResult').innerHTML=Object.entries(poll).map(([k,v])=>`${k}: ${v} vote(s)`).join('<br>');
+  document.getElementById('pollResult').style.display='block';
+  e.target.style.display='none';
+};
+</script>
+</body>
+</html>
